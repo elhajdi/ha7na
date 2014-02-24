@@ -160,7 +160,54 @@ li.submenu > ul {
 	position: absolute;
 	top: -7px;
 }*/
+/**
+	content div
+**/
+#content {
+	position: absolute;
+	top: inherit;
+	left: 250px;
+	width: calc(100% - 250px);
+    width: -webkit-calc(100% - 250px);
+	/*background-color: #EFECCA;*/
+	padding: 10px 10px;
+	min-height: 500px;
+}
 
+/**
+	Panel styling
+**/
+.widget-box {
+	margin-bottom: 20px;
+	background-color: #ffffff;
+	border-radius: 0px;
+	border:1px solid #E6E2AF;
+}
+.widget-box >.widget-title {
+	color: #333333;
+	background-color: #E6E2AF;
+	/*border-color: #dddddd;*/
+
+}
+.widget-box>.widget-title >.widget-icon {
+	padding: 8px 10px 7px 12px;
+	display: inline-block;
+}
+.widget-box>.widget-title > h5 {
+	display: inline-block;
+}
+.widget-box>.widget-content{
+	padding: 12px;
+}
+.widget-box .widget-footer {
+	padding: 10px 15px;
+	background-color: #FAF6C1;
+	text-align: right;
+}
+.widget-box>.widget-title >.widget-actions{
+	float :right;
+	padding: 8px 10px 7px 12px;
+}
 @media(max-width: 750px) {
 	#side-bar {
 		height: 100%;
@@ -184,6 +231,11 @@ li.submenu > ul {
 	nav ul li .collapse{
 		display: none;
 		/*float:right;*/
+	}
+	#content {
+		width: calc(100% - 64px);
+	    width: -webkit-calc(100% - 64px);
+	    left:64px;
 	}
 }
 
@@ -220,5 +272,10 @@ li.submenu > ul {
 		padding: 0;
 		font-size: 14.5px;
 		
+	}
+	#content {
+		width: calc(100% - 40px);
+	    width: -webkit-calc(100% - 40px);
+	    left:40px;
 	}
 }
