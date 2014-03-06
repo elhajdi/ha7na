@@ -1,0 +1,30 @@
+.no-padding {
+    padding: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+.alert {
+    border: 1px solid rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+    padding: 15px;
+}
+/**
+Tbales
+**/
+.table thead tr {
+    background-color: #EEEEEE;
+    font-size: 12px;
+}
+
+.table-hover>tbody>tr:hover>td, .table-hover>tbody>tr:hover>th {
+background-color: #ecf3f8;
+}
+/*
+.dataTables_paginate{
+	border-radius: 4px 4px 4px 4px;
+    display: inline-block;
+    margin: 20px 0;
+    padding-left: 0;
+}*/
