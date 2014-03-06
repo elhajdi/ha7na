@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tables Page - Simplest Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/simplest-admin.css" rel="stylesheet" >
+    <link href="css/tables.css" rel="stylesheet" >
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="fa_font-awesome/css/font-awesome.css">
+    <link href="css/jquery.dataTables_themeroller.css" rel="stylesheet" >
+    <link href="css/jquery-ui-1.8.4.custom.css" rel="stylesheet" >
+
+  </head>
+
+  <body>
+<!-- main content div -->
+    <div id="main-content">
+      <!-- Header -->
+      <header id="header">
+        <!-- LOgo navigation -->
+        <div class="nav-logo">
+        <i class="fa fa-fire"></i>
+          Simplest Admin
+        </div>
+        <!-- end Logo navigation -->
+        <!-- navigation right part -->
+        <div class="nav-right">
+          <ul >
+            <li><a><i class="fa fa-tasks"></i></a></li>
+            <li class="dropdown">
+              <a  class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-envelope"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-caret">
+                  <!-- <div class="arrow"></div> -->
+                  <li><a><i class="fa fa-envelope"></i>message 1</a></li>
+                  <li><a><i class="fa fa-envelope"></i>message 2</a></li>
+                  <li><a><i class="fa fa-envelope"></i>message 3</a></li>
+              </ul>
+            </li>
+            <li>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="fa fa-bell"></i>
+              </a>
+              <ul class="dropdown-menu dropdown-caret">
+                  <li><a><i class="fa fa-bell"></i>bell 1</a></li>
+                  <li><a><i class="fa fa-bell"></i>bell 2</a></li>
+                  <li><a><i class="fa fa-bell"></i>bell 3</a></li>
+              </ul>
+            </li>
+            <li class="v-divider"></li>
+            <li><a><i class="fa fa-cogs"></i></a></li>
+            <li><a><i class="fa fa-user"></i></a></li>
+            <li><a><i class="fa fa-sign-out"></i></a></li>
+          </ul>
+        </div>
+        <!-- end  navigation right part -->
+      </header>
+      <!--  end header -->
+      <!-- side bar -->
+      <aside id="side-bar">
+        <div class="profile" style="height:20px;">
+          wanary
+        </div>
+        <nav>
+          <ul>
+            <li><a ><i class="fa fa-dashboard"></i><span class="text">Dashboard</span> </a></li>
+            <li><a ><i class="fa fa-edit"></i><span class="text">Form Elements</span> </a></li>
+            <li class="submenu open">
+              <a >
+                <i class="fa fa-table"></i><span class="text">Tables</span> 
+                <i class='collapse fa fa-minus-square-o'></i>
+              </a>
+              <ul class="">
+                <li><a href="tables.html"><i class="fa fa-file-o"></i><span class="text">Normal Tables</span> </a></li>
+                <li><a href="datatables.html"><i class="fa fa-file-o"></i><span class="text">Data Tables</span> </a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a >
+              <i class="fa fa-folder-open-o"></i><span class="text">3 Level navigation</span> 
+              <i class='collapse fa fa-plus-square-o'></i></a>
+              <ul class="">
+                <li class="submenu">
+                  <a><i class="fa fa-folder-open-o"></i><span class="text">2nd level</span><i class='collapse fa fa-plus-square-o'></i> </a>
+
+                  <ul>
+                    <li><a><i class="fa fa-file-o"></i><span class="text">3rd level</span> </a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-file-o"></i><span class="text">item 2</span> </a></li>
+              </ul>
+            </li>
+            <li><a ><i class="icon-youtube"></i><span class="text">item 2</span> </a></li>
+            <li><a ><i class="icon-youtube"></i><span class="text">item 3</span> </a></li>
+            <li><a ><i class="icon-youtube"></i><span class="text">item 4</span> </a></li>
+            <li><a ><i class="icon-youtube"></i><span class="text">item 5</span> </a></li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- END side bar -->
+      <!-- content div -->
+      <div id="content">
+        <div class="content-header">
+          <h1>Normal Tables</h1>
+        </div>
+         <div class="content-body container-fluid">          
+          <!-- start simple row normal table -->
+          <div class="row">
+            <div class="widget-box">
+              <div class="widget-title">
+                <span class="widget-icon">
+                  <i class="fa fa-table"></i>
+                </span>
+                <h5 >Normal table</h5>
+                <div class="widget-actions">
+                  <a href="#" class=""><i class="fa fa-times"></i></a>
+                </div>
+                <div class="widget-actions">
+                  <a href="#" class="widget-collapse"><i class="fa fa-minus"></i></a>
+                </div>
+              </div>
+              <div class="widget-content">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> <!--End simple row normal table -->
+
+          <!-- start simple row striped table no padding -->
+          <div class="row">
+            <div class="widget-box">
+              <div class="widget-title">
+                <span class="widget-icon">
+                  <i class="fa fa-table"></i>
+                </span>
+                <h5 >No Padding</h5>
+                <div class="widget-actions">
+                  <a href="#" class=""><i class="fa fa-times"></i></a>
+                </div>
+                <div class="widget-actions">
+                  <a href="#" class="widget-collapse"><i class="fa fa-minus"></i></a>
+                </div>
+              </div>
+              <div class="widget-content no-padding">
+                <div class="alert alert-info no-margin fade in">
+                  <button data-dismiss="alert" class="close">
+                    ×
+                  </button>
+                  <i class="fa-fw fa fa-info"></i>
+                  Adds zebra-striping to table row within <code>&lt;table&gt;</code> by adding the <code>.table-striped</code> with the base class
+                </div>
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div> <!--End simple row striped table no padding -->
+
+
+          
+          <div class="row">
+                        <!-- start table hover states -->
+            <div class="widget-box col-lg-6 col-md-6 col-sm-12 no-padding">
+              <div class="widget-title">
+                <span class="widget-icon">
+                  <i class="fa fa-table"></i>
+                </span>
+                <h5 >Table Hover States</h5>
+                <div class="widget-actions">
+                  <a href="#" class=""><i class="fa fa-times"></i></a>
+                </div>
+                <div class="widget-actions">
+                  <a href="#" class="widget-collapse"><i class="fa fa-minus"></i></a>
+                </div>
+              </div>
+              <div class="widget-content no-padding">
+                <div class="alert alert-info no-margin fade in">
+                  <button data-dismiss="alert" class="close">
+                    ×
+                  </button>
+                  <i class="fa-fw fa fa-info"></i>
+                  Enables hover effect <code>&lt;table&gt;</code> by adding the <code>.table-hover</code> with the base class
+                </div>
+                <table class="table table-bordered table-hover">
+                  <thead>
+                    <tr>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1</td>
+                      <td>Row 2</td>
+                      <td>Row 3</td>
+                      <td>Row 4</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div><!--End table hover states -->
+            <!-- start table with colors -->
+            <div class="widget-box col-lg-6 col-md-6 col-sm-12 no-padding">
+              <div class="widget-title">
+                <span class="widget-icon">
+                  <i class="fa fa-table"></i>
+                </span>
+                <h5 >Table TR with colors</h5>
+                <div class="widget-actions">
+                  <a href="#" class=""><i class="fa fa-times"></i></a>
+                </div>
+                <div class="widget-actions">
+                  <a href="#" class="widget-collapse"><i class="fa fa-minus"></i></a>
+                </div>
+              </div>
+              <div class="widget-content no-padding">
+                <div class="alert alert-info no-margin fade in">
+                  <button data-dismiss="alert" class="close">
+                    ×
+                  </button>
+                  <i class="fa-fw fa fa-info"></i>
+                  Add custom colors to your TR and TD <code>&lt;tr&gt;</code> by adding <code>.success</code>, <code>.danger</code>, <code>.warning</code> and <code>.info</code> respectively
+                </div>
+                <table class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                      <th>Column name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="success">
+                      <td>1</td>
+                      <td>TB - Monthly</td>
+                      <td>01/04/2012</td>
+                      <td>Approved</td>
+                    </tr>
+                    <tr class="danger">
+                      <td>2</td>
+                      <td>TB - Monthly</td>
+                      <td>02/04/2012</td>
+                      <td>Declined</td>
+                    </tr>
+                    <tr class="warning">
+                      <td>3</td>
+                      <td>TB - Monthly</td>
+                      <td>03/04/2012</td>
+                      <td>Pending</td>
+                    </tr>
+                    <tr class="info">
+                      <td>4</td>
+                      <td>TB - Monthly</td>
+                      <td>04/04/2012</td>
+                      <td>Call in to confirm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div><!--End table with colors -->
+
+        </div>
+      </div>
+      <!-- END content div -->
+    </div>
+    <!-- end main content div -->
+      <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/simplest-admin.js"></script>
+     <script src="js/tables.js"></script>
+  </body>
+</html>
